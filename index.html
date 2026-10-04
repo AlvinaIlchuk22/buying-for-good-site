@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buying for Good — Everyday purchases, extraordinary good (concept build)</title>
+<meta name="description" content="Concept build of a storytelling website for Buying for Good: a six-step story from curiosity to action, with audience pathways and a conditional registration form.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buying for Good (concept build)">
+<meta property="og:title" content="Buying for Good: Everyday purchases, extraordinary good (concept build)">
+<meta property="og:description" content="A six-step storytelling website concept: from curiosity to action, with audience pathways and a conditional registration form.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sunrise over a calm ocean with the words Everyday purchases. Extraordinary good.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Buying for Good: Everyday purchases, extraordinary good (concept build)">
+<meta name="twitter:description" content="A six-step storytelling website concept: from curiosity to action, with audience pathways and a conditional registration form.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+<!-- After deploy: change the two image URLs above to absolute, e.g. https://YOUR-SITE.vercel.app/assets/og-image.jpg (link previews need the full address) -->
+<meta name="theme-color" content="#0B2A4A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1791142292">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="Buying for Good, home">
+    <svg class="brand-mark" viewBox="0 0 48 32" aria-hidden="true">
+      <circle cx="14" cy="16" r="11" fill="#0E8C8C"/>
+      <circle cx="24" cy="16" r="11" fill="#0B2A4A" fill-opacity=".92"/>
+      <circle cx="34" cy="16" r="11" fill="#F4B860" fill-opacity=".95"/>
+    </svg>
+    <span class="brand-name">Buying <em>for</em> Good</span>
+  </a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="#belief">The idea</a>
+    <a href="#how">How it works</a>
+    <a href="#trust">Trust</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn btn-sm" href="#register">Register interest</a>
+  <span class="concept-pill" title="This is a concept build made from a public job brief">Concept build</span>
+</header>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- Story rail (desktop) -->
+<nav class="rail" id="rail" aria-label="Story progress">
+  <ol>
+    <li><a href="#top" data-stage="1"><span class="dot"></span><span class="lbl">Curiosity</span></a></li>
+    <li><a href="#cards" data-stage="2"><span class="dot"></span><span class="lbl">Understanding</span></a></li>
+    <li><a href="#belief" data-stage="3"><span class="dot"></span><span class="lbl">Belief</span></a></li>
+    <li><a href="#trust" data-stage="4"><span class="dot"></span><span class="lbl">Trust</span></a></li>
+    <li><a href="#audience" data-stage="5"><span class="dot"></span><span class="lbl">Personal benefit</span></a></li>
+    <li><a href="#register" data-stage="6"><span class="dot"></span><span class="lbl">Action</span></a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<!-- ============ 1 · CURIOSITY — HERO ============ -->
+<section class="hero has-video" id="top" data-stage="1" aria-labelledby="heroTitle">
+  <div class="sky" aria-hidden="true"></div>
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="assets/hero-ocean.mp4" type="video/mp4">
+  </video>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="sun" id="sun" aria-hidden="true"></div>
+  <div class="sun-glow" aria-hidden="true"></div>
+  <!-- The CSS sky, sun and waves below are the fallback if the video is removed (delete class has-video on .hero). -->
+  <div class="waves" aria-hidden="true">
+    <svg class="wave w1" viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0,170 C240,90 480,250 720,170 S1200,90 1440,170 C1680,90 1920,250 2160,170 S2640,90 2880,170 V400 H0 Z"/></svg>
+    <svg class="wave w2" viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0,200 C240,130 480,270 720,200 S1200,130 1440,200 C1680,130 1920,270 2160,200 S2640,130 2880,200 V400 H0 Z"/></svg>
+    <svg class="wave w3" viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0,235 C240,175 480,290 720,235 S1200,175 1440,235 C1680,175 1920,290 2160,235 S2640,175 2880,235 V400 H0 Z"/></svg>
+  </div>
+  <div class="hero-copy">
+    <p class="eyebrow light" data-split>Curiosity &middot; a story in six steps</p>
+    <h1 id="heroTitle">
+      <span class="ln"><span>What if the shopping</span></span>
+      <span class="ln"><span>you already do</span></span>
+      <span class="ln"><span><em>could change a life?</em></span></span>
+    </h1>
+    <p class="lede light">Buying for Good turns everyday purchases at participating stores into funding for the charities people care about.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#cards">Begin the story</a>
+      <a class="btn btn-ghost light" href="#register">Register interest</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#cards" aria-label="Scroll to the story"><span>Scroll</span><i></i></a>
+</section>
+
+<!-- ============ 2 · UNDERSTANDING — 8 MOVING CARDS ============ -->
+<section class="cards" id="cards" data-stage="2" aria-labelledby="cardsTitle">
+  <div class="cards-pin">
+    <div class="cards-head">
+      <p class="eyebrow">Understanding</p>
+      <h2 id="cardsTitle">A simple idea,<br><em>eight small truths.</em></h2>
+    </div>
+    <ol class="cards-track" id="cardsTrack">
+      <li class="card c-sand"><span class="n">01</span><h3>You already shop.</h3><p>Groceries, coffee, fuel, gifts. Everyday spending is already happening on every high street.</p></li>
+      <li class="card c-teal"><span class="n">02</span><h3>Charities need steady support.</h3><p>Good causes spend precious time chasing the next dollar instead of doing the work.</p></li>
+      <li class="card c-navy"><span class="n">03</span><h3>Businesses want to belong.</h3><p>Local businesses care about their community and want a meaningful way to show it.</p></li>
+      <li class="card c-sand"><span class="n">04</span><h3>The gap is a connection.</h3><p>The money, the stores and the causes all exist. What is missing is the link between them.</p></li>
+      <li class="card c-gold"><span class="n">05</span><h3>What if shopping gave back?</h3><p>Eligible purchases at participating stores help fund the charities supporters choose.</p></li>
+      <li class="card c-teal"><span class="n">06</span><h3>Choice stays with people.</h3><p>Supporters pick the cause. Businesses opt in. Charities are listed transparently.</p></li>
+      <li class="card c-sand"><span class="n">07</span><h3>Small adds up.</h3><p>One purchase is small. Thousands of them, together, become real and lasting support.</p></li>
+      <li class="card c-navy"><span class="n">08</span><h3>A story worth joining.</h3><p>Follow the idea from curiosity to action, and see where you fit.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Three gentle photo bands -->
+<section class="bands" aria-label="Photo bands (placeholders)" data-stage="2">
+  <div class="band b1" aria-hidden="true"><div class="band-in">
+    <div class="ph ph-a" data-label="Ocean sunrise" style="--img:url(assets/band1-1.jpg)"></div><div class="ph ph-b" data-label="Surf club volunteers" style="--img:url(assets/band1-2.jpg)"></div><div class="ph ph-c" data-label="Local market" style="--img:url(assets/band1-3.jpg)"></div><div class="ph ph-d" data-label="Headland walk" style="--img:url(assets/band1-4.jpg)"></div><div class="ph ph-a" data-label="Ocean sunrise" style="--img:url(assets/band1-1.jpg)"></div><div class="ph ph-b" data-label="Surf club volunteers" style="--img:url(assets/band1-2.jpg)"></div><div class="ph ph-c" data-label="Local market" style="--img:url(assets/band1-3.jpg)"></div><div class="ph ph-d" data-label="Headland walk" style="--img:url(assets/band1-4.jpg)"></div>
+  </div></div>
+  <div class="band b2" aria-hidden="true"><div class="band-in">
+    <div class="ph ph-c" data-label="Community garden" style="--img:url(assets/band2-1.jpg)"></div><div class="ph ph-d" data-label="Cafe regulars" style="--img:url(assets/band2-2.jpg)"></div><div class="ph ph-a" data-label="Kids' sports day" style="--img:url(assets/band2-3.jpg)"></div><div class="ph ph-b" data-label="Farm gate stall" style="--img:url(assets/band2-4.jpg)"></div><div class="ph ph-c" data-label="Community garden" style="--img:url(assets/band2-1.jpg)"></div><div class="ph ph-d" data-label="Cafe regulars" style="--img:url(assets/band2-2.jpg)"></div><div class="ph ph-a" data-label="Kids' sports day" style="--img:url(assets/band2-3.jpg)"></div><div class="ph ph-b" data-label="Farm gate stall" style="--img:url(assets/band2-4.jpg)"></div>
+  </div></div>
+  <div class="band b3" aria-hidden="true"><div class="band-in">
+    <div class="ph ph-b" data-label="Wildlife carers" style="--img:url(assets/band3-1.jpg)"></div><div class="ph ph-a" data-label="Main street" style="--img:url(assets/band3-2.jpg)"></div><div class="ph ph-d" data-label="Beach clean-up" style="--img:url(assets/band3-3.jpg)"></div><div class="ph ph-c" data-label="Bakery morning" style="--img:url(assets/band3-4.jpg)"></div><div class="ph ph-b" data-label="Wildlife carers" style="--img:url(assets/band3-1.jpg)"></div><div class="ph ph-a" data-label="Main street" style="--img:url(assets/band3-2.jpg)"></div><div class="ph ph-d" data-label="Beach clean-up" style="--img:url(assets/band3-3.jpg)"></div><div class="ph ph-c" data-label="Bakery morning" style="--img:url(assets/band3-4.jpg)"></div>
+  </div></div>
+</section>
+
+<!-- ============ 3 · BELIEF (five parts) ============ -->
+<div id="belief" data-stage="3">
+
+<!-- Belief 1/5 — What if -->
+<section class="sec whatif" aria-labelledby="whatifTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal">Belief &middot; 1 of 5</p>
+    <h2 id="whatifTitle" class="reveal">What if&hellip;</h2>
+    <div class="grid4">
+      <article class="wcard reveal"><span class="q">What if</span><p>every coffee quietly funded something good?</p></article>
+      <article class="wcard reveal"><span class="q">What if</span><p>charities didn't have to chase every single dollar?</p></article>
+      <article class="wcard reveal"><span class="q">What if</span><p>local businesses could grow by giving?</p></article>
+      <article class="wcard reveal"><span class="q">What if</span><p>the good was built into the shopping we already do?</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Belief 2/5 — The Big Idea -->
+<section class="sec bigidea" aria-labelledby="bigTitle">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal">Belief &middot; 2 of 5</p>
+    <h2 id="bigTitle" class="sr-only">The Big Idea</h2>
+    <p class="big-words" id="bigWords" aria-label="Every day, ordinary purchases happen on every high street. What if each one could quietly fund something good, with no extra effort from the shopper?">Every day, ordinary purchases happen on every high street. What if each one could quietly fund something good, with no extra effort from the shopper?</p>
+  </div>
+</section>
+
+<!-- Belief 3/5 — Welcome to Buying for Good -->
+<section class="sec welcome" id="welcome" aria-labelledby="welcomeTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal">Belief &middot; 3 of 5</p>
+    <h2 id="welcomeTitle" class="reveal">Welcome to <em>Buying for Good</em></h2>
+    <p class="lede reveal">Three kinds of people. One shared idea.</p>
+
+    <div class="logo-reveal" id="logoReveal">
+      <div class="logo-art" aria-hidden="true">
+        <svg viewBox="0 0 360 200">
+          <g class="fig f-biz"><circle cx="90" cy="100" r="62" fill="#0E8C8C"/><circle cx="90" cy="76" r="14" fill="#fff"/><path d="M62 128c4-18 14-26 28-26s24 8 28 26z" fill="#fff"/></g>
+          <g class="fig f-cha"><circle cx="180" cy="100" r="62" fill="#0B2A4A" fill-opacity=".94"/><circle cx="180" cy="76" r="14" fill="#fff"/><path d="M152 128c4-18 14-26 28-26s24 8 28 26z" fill="#fff"/></g>
+          <g class="fig f-sup"><circle cx="270" cy="100" r="62" fill="#F4B860" fill-opacity=".96"/><circle cx="270" cy="76" r="14" fill="#0B2A4A"/><path d="M242 128c4-18 14-26 28-26s24 8 28 26z" fill="#0B2A4A"/></g>
+        </svg>
+      </div>
+      <ul class="logo-key">
+        <li><i class="k k1"></i><div><strong>Business</strong><span>Participating stores that opt in and give back through everyday sales.</span></div></li>
+        <li><i class="k k2"></i><div><strong>Charity</strong><span>Causes that receive steady, transparent funding from shared purchases.</span></div></li>
+        <li><i class="k k3"></i><div><strong>Supporter</strong><span>People who shop as they normally would and choose where the good goes.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="grid3">
+      <article class="scard reveal"><div class="scard-img ph" data-label="Business" role="img" aria-label="a local business owner at her shop door" style="--img:url(assets/aud-business.jpg)"></div><h3>Business</h3><p>Join as a participating store and turn everyday customers into community supporters.</p><a class="link" href="#audience" data-pick="business">See the benefits &rarr;</a></article>
+      <article class="scard reveal"><div class="scard-img ph" data-label="Charity" role="img" aria-label="charity volunteers planting seedlings" style="--img:url(assets/aud-charity.jpg)"></div><h3>Charity</h3><p>Be listed, be chosen, and receive funding from purchases made in your community.</p><a class="link" href="#audience" data-pick="charity">See the benefits &rarr;</a></article>
+      <article class="scard reveal"><div class="scard-img ph" data-label="Supporter" role="img" aria-label="a supporter walking along a main street" style="--img:url(assets/aud-supporter.jpg)"></div><h3>Supporter</h3><p>Shop as usual at participating stores and direct your impact to the cause you care about.</p><a class="link" href="#audience" data-pick="supporter">See the benefits &rarr;</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- Belief 4/5 — How it works (selectable tabs) -->
+<section class="sec how" id="how" aria-labelledby="howTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal">Belief &middot; 4 of 5</p>
+    <h2 id="howTitle" class="reveal">How it works</h2>
+    <div class="tabs reveal" id="howTabs">
+      <div class="tablist" role="tablist" aria-label="How it works for…">
+        <button role="tab" id="tab-biz" aria-controls="panel-biz" aria-selected="true" tabindex="0">Business</button>
+        <button role="tab" id="tab-cha" aria-controls="panel-cha" aria-selected="false" tabindex="-1">Charity</button>
+        <button role="tab" id="tab-sup" aria-controls="panel-sup" aria-selected="false" tabindex="-1">Supporter</button>
+        <span class="tab-ink" aria-hidden="true"></span>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="panel-biz" aria-labelledby="tab-biz">
+        <ol class="steps">
+          <li><b>1</b><div><h3>Opt in</h3><p>Register your store as a participating business.</p></div></li>
+          <li><b>2</b><div><h3>Customers shop as normal</h3><p>Eligible purchases are recognised at the point of sale.</p></div></li>
+          <li><b>3</b><div><h3>Give back, visibly</h3><p>Your community sees the good your store helps fund.</p></div></li>
+        </ol>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="panel-cha" aria-labelledby="tab-cha" hidden>
+        <ol class="steps">
+          <li><b>1</b><div><h3>Apply to be listed</h3><p>Share your cause, your work and how funds are used.</p></div></li>
+          <li><b>2</b><div><h3>Supporters choose you</h3><p>People direct their impact to the causes they care about.</p></div></li>
+          <li><b>3</b><div><h3>Receive steady funding</h3><p>Contributions arrive with clear, simple reporting.</p></div></li>
+        </ol>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="panel-sup" aria-labelledby="tab-sup" hidden>
+        <ol class="steps">
+          <li><b>1</b><div><h3>Pick your cause</h3><p>Choose the charity or cause that matters to you.</p></div></li>
+          <li><b>2</b><div><h3>Shop at participating stores</h3><p>Buy what you were going to buy anyway.</p></div></li>
+          <li><b>3</b><div><h3>See your impact</h3><p>Follow the ripple your everyday purchases create.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Belief 5/5 — Why this matters: the ripple -->
+<section class="ripple" id="ripple" aria-labelledby="rippleTitle">
+  <div class="ripple-stage" id="rippleStage">
+    <div class="ripple-head">
+      <p class="eyebrow light">Belief &middot; 5 of 5</p>
+      <h2 id="rippleTitle">Why this <em>matters</em></h2>
+    </div>
+
+    <svg class="ripple-svg" viewBox="0 0 800 800" aria-hidden="true">
+      <circle class="rg" cx="400" cy="400" r="320"/>
+      <circle class="rg" cx="400" cy="400" r="260"/>
+      <circle class="rg" cx="400" cy="400" r="200"/>
+      <circle class="rg" cx="400" cy="400" r="140"/>
+      <circle class="rg" cx="400" cy="400" r="80"/>
+      <circle class="core" cx="400" cy="400" r="14"/>
+    </svg>
+
+    <ul class="chips" aria-label="Five everyday purchases">
+      <li class="chip" data-i="0"><span aria-hidden="true">&#9749;</span>Morning coffee</li>
+      <li class="chip" data-i="1"><span aria-hidden="true">&#128722;</span>Weekly groceries</li>
+      <li class="chip" data-i="2"><span aria-hidden="true">&#9981;</span>A tank of fuel</li>
+      <li class="chip" data-i="3"><span aria-hidden="true">&#128138;</span>A pharmacy run</li>
+      <li class="chip" data-i="4"><span aria-hidden="true">&#128214;</span>A birthday book</li>
+    </ul>
+
+    <div class="ripple-caps" aria-live="off">
+      <p class="cap" data-i="0">One purchase. Small, ordinary&hellip;</p>
+      <p class="cap" data-i="1">&hellip;and then another.</p>
+      <p class="cap" data-i="2">Each one reaches a little further.</p>
+      <p class="cap" data-i="3">Together they begin to overlap.</p>
+      <p class="cap" data-i="4">Five everyday moments. One shared ripple.</p>
+    </div>
+
+    <div class="ripple-photos" aria-label="Six causes supported (sample)">
+      <div class="ph ph-b" data-label="Wildlife carers" role="img" aria-label="Wildlife carers" style="--img:url(assets/ripple-1-wildlife.jpg)"></div>
+      <div class="ph ph-a" data-label="Surf lifesavers" role="img" aria-label="Surf lifesavers" style="--img:url(assets/ripple-2-lifesavers.jpg)"></div>
+      <div class="ph ph-c" data-label="Food relief" role="img" aria-label="Food relief" style="--img:url(assets/ripple-3-food.jpg)"></div>
+      <div class="ph ph-d" data-label="Youth sport" role="img" aria-label="Youth sport" style="--img:url(assets/ripple-4-youth.jpg)"></div>
+      <div class="ph ph-a" data-label="Reef restoration" role="img" aria-label="Reef restoration" style="--img:url(assets/ripple-5-reef.jpg)"></div>
+      <div class="ph ph-b" data-label="Aged-care visitors" role="img" aria-label="Aged-care visitors" style="--img:url(assets/ripple-6-aged.jpg)"></div>
+    </div>
+    <p class="ripple-end">Small purchases. <em>A shared ripple.</em></p>
+  </div>
+</section>
+</div>
+
+<!-- ============ 4 · TRUST ============ -->
+<section class="sec trust" id="trust" data-stage="4" aria-labelledby="trustTitle">
+  <div class="wrap">
+    <p class="eyebrow reveal">Trust</p>
+    <h2 id="trustTitle" class="reveal">Where the money <em>goes</em></h2>
+    <p class="lede reveal">Simple, visible and easy to check. Figures below are illustrative until final numbers are confirmed.</p>
+
+    <figure class="flow reveal" id="flow">
+      <svg viewBox="0 0 800 460" role="img" aria-label="Diagram: a purchase splits into funding for the chosen charity, platform running costs, and reporting and audit.">
+        <circle class="coin" cx="400" cy="48" r="30"/>
+        <text x="400" y="54" text-anchor="middle" class="coin-t">$</text>
+        <path class="fl fl1" d="M400 80 C400 170 160 170 160 300"/>
+        <path class="fl fl2" d="M400 80 L400 300"/>
+        <path class="fl fl3" d="M400 80 C400 170 640 170 640 300"/>
+        <g class="node n1"><rect x="60" y="300" width="200" height="110" rx="18"/><text x="160" y="344" text-anchor="middle" class="nv">70%</text><text x="160" y="376" text-anchor="middle" class="nl">Your chosen charity</text></g>
+        <g class="node n2"><rect x="300" y="300" width="200" height="110" rx="18"/><text x="400" y="344" text-anchor="middle" class="nv">20%</text><text x="400" y="376" text-anchor="middle" class="nl">Running the platform</text></g>
+        <g class="node n3"><rect x="540" y="300" width="200" height="110" rx="18"/><text x="640" y="344" text-anchor="middle" class="nv">10%</text><text x="640" y="376" text-anchor="middle" class="nl">Reporting &amp; audit</text></g>
+      </svg>
+      <figcaption>Illustrative split. Replace with confirmed figures before launch.</figcaption>
+    </figure>
+
+    <div class="gov reveal">
+      <h3>Governance, in plain view</h3>
+      <details><summary>Who oversees the initiative?</summary><p>A short description of the board or advisory group, their roles and how decisions are recorded. (Sample copy)</p></details>
+      <details><summary>How are charities chosen and checked?</summary><p>The listing criteria, how organisations are verified, and how concerns can be raised. (Sample copy)</p></details>
+      <details><summary>How is reporting handled?</summary><p>What is reported, how often, and where supporters can read it. (Sample copy)</p></details>
+    </div>
+
+    <blockquote class="promise reveal" id="promise">
+      <div class="p-photo ph ph-b" data-label="Founder photo" role="img" aria-label="Portrait of the founder (placeholder portrait)" style="--img:url(assets/founder.jpg)"></div>
+      <div class="p-body">
+        <span class="p-label">A personal promise</span>
+        <p>I will keep this simple, honest and open. If it is not good for the people it is meant to serve, we will change it.</p>
+        <svg class="sig" viewBox="0 0 220 60" aria-hidden="true"><path d="M6 40c14-30 24-34 22-14-2 18 8 22 20 4s18-24 14-6c-4 14 6 16 18 2 8-10 12-8 8 2-2 6 4 8 14 0 12-10 26-6 38-6 22 0 38 6 74-14" /></svg>
+        <small>Placeholder portrait and signature &middot; the client supplies the real ones</small>
+      </div>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 5 · PERSONAL BENEFIT ============ -->
+<section class="crowd" id="crowd" aria-label="A crowd of everyday people">
+  <div class="crowd-pin">
+    <div class="crowd-frame has-poster" id="crowdFrame">
+      <video class="crowd-video" autoplay muted loop playsinline preload="auto" poster="assets/crowd-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/crowd.mp4" type="video/mp4">
+      </video>
+      <div class="crowd-dots" aria-hidden="true"></div>
+      <div class="crowd-text">
+        <p class="eyebrow light">Personal benefit</p>
+        <h2>Different people.<br><em>One idea.</em></h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec audience" id="audience" data-stage="5" aria-labelledby="audTitle">
+  <div class="wrap">
+    <h2 id="audTitle" class="reveal">Which one are <em>you?</em></h2>
+    <p class="lede reveal">Choose a path to see what is in it for you.</p>
+    <div class="aud" id="aud" role="radiogroup" aria-label="I am a…">
+      <button class="aud-panel a-biz" role="radio" aria-checked="false" data-aud="business">
+        <span class="aud-img ph ph-a" data-label="Shopfront" style="--img:url(assets/aud-business.jpg)"></span>
+        <span class="aud-label">Business</span>
+        <span class="aud-tease">Grow by giving back.</span>
+      </button>
+      <button class="aud-panel a-cha" role="radio" aria-checked="false" data-aud="charity">
+        <span class="aud-img ph ph-b" data-label="Volunteers" style="--img:url(assets/aud-charity.jpg)"></span>
+        <span class="aud-label">Charity</span>
+        <span class="aud-tease">Steady, visible support.</span>
+      </button>
+      <button class="aud-panel a-sup" role="radio" aria-checked="false" data-aud="supporter">
+        <span class="aud-img ph ph-c" data-label="Everyday shoppers" style="--img:url(assets/aud-supporter.jpg)"></span>
+        <span class="aud-label">Supporter</span>
+        <span class="aud-tease">Shop as usual. Do good.</span>
+      </button>
+    </div>
+
+    <div class="benefits" id="benefits" aria-live="polite" tabindex="-1">
+      <p class="prompt" id="benefitsPrompt">Pick a path above and your benefits and questions will appear here.</p>
+      <div class="benefits-body" id="benefitsBody" hidden>
+        <h3 id="benTitle"></h3>
+        <ul class="ben-list" id="benList"></ul>
+        <div class="faq" id="faq">
+          <h4 id="faqAudTitle"></h4>
+          <div id="faqAud"></div>
+          <h4>Common questions</h4>
+          <div id="faqCommon"></div>
+        </div>
+        <a class="btn" href="#register">Register my interest &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · ACTION ============ -->
+<section class="sec jigsaw" id="jigsaw" data-stage="6" aria-labelledby="jigTitle">
+  <div class="wrap center">
+    <p class="eyebrow reveal">Action</p>
+    <h2 id="jigTitle" class="reveal">Every piece <em>fits</em></h2>
+    <div class="jig" id="jig" aria-hidden="true">
+      <svg viewBox="0 0 520 260">
+        <g class="jp jp1"><rect x="40" y="70" width="140" height="120" rx="14" fill="#0E8C8C"/><circle cx="180" cy="130" r="20" fill="#0E8C8C"/><text x="110" y="136" text-anchor="middle">Business</text></g>
+        <g class="jp jp2"><rect x="190" y="70" width="140" height="120" rx="14" fill="#0B2A4A"/><circle cx="330" cy="130" r="20" fill="#0B2A4A"/><circle cx="190" cy="130" r="20" fill="#FBF8F2"/><text x="260" y="136" text-anchor="middle">Charity</text></g>
+        <g class="jp jp3"><rect x="340" y="70" width="140" height="120" rx="14" fill="#F4B860"/><circle cx="340" cy="130" r="20" fill="#FBF8F2"/><text x="410" y="136" text-anchor="middle" class="dark">Supporter</text></g>
+      </svg>
+    </div>
+    <p class="lede reveal">Tell us where you fit and we will be in touch.</p>
+  </div>
+</section>
+
+<section class="sec register" id="register" aria-labelledby="regTitle">
+  <div class="wrap reg-wrap">
+    <div class="reg-intro">
+      <h2 id="regTitle" class="reveal">Register your <em>interest</em></h2>
+      <p class="reveal">Choose your path and answer only what is relevant. Optional questions are optional.</p>
+      <p class="reveal small">Follow-up requests are handled by email. No booking is needed.</p>
+    </div>
+
+    <form class="form" id="regForm" novalidate>
+      <div class="err-summary" id="errSummary" role="alert" tabindex="-1" hidden></div>
+
+      <fieldset class="f-aud">
+        <legend>I am a&hellip; <span class="req">required</span></legend>
+        <div class="pills" role="radiogroup" aria-label="I am a">
+          <label class="pill"><input type="radio" name="audience" value="business"><span>Business</span></label>
+          <label class="pill"><input type="radio" name="audience" value="charity"><span>Charity</span></label>
+          <label class="pill"><input type="radio" name="audience" value="supporter"><span>Supporter</span></label>
+        </div>
+        <p class="err" data-err="audience" hidden></p>
+      </fieldset>
+
+      <div class="row2">
+        <div class="field"><label for="name">Your name <span class="req">required</span></label><input id="name" name="name" autocomplete="name"><p class="err" data-err="name" hidden></p></div>
+        <div class="field"><label for="email">Email <span class="req">required</span></label><input id="email" name="email" type="email" autocomplete="email" inputmode="email"><p class="err" data-err="email" hidden></p></div>
+      </div>
+
+      <!-- Conditional: business -->
+      <fieldset class="cond" data-for="business" hidden disabled>
+        <legend>About your business</legend>
+        <div class="row2">
+          <div class="field"><label for="bizName">Business name <span class="req">required</span></label><input id="bizName" name="bizName"><p class="err" data-err="bizName" hidden></p></div>
+          <div class="field"><label for="bizType">Type of business <span class="opt">optional</span></label>
+            <select id="bizType" name="bizType"><option value="">Choose…</option><option>Cafe / food</option><option>Retail</option><option>Services</option><option>Health &amp; wellbeing</option><option>Other</option></select></div>
+        </div>
+        <div class="field"><label for="bizSites">Number of locations <span class="opt">optional</span></label>
+          <select id="bizSites" name="bizSites"><option value="">Choose…</option><option>1</option><option>2–5</option><option>6+</option></select></div>
+      </fieldset>
+
+      <!-- Conditional: charity -->
+      <fieldset class="cond" data-for="charity" hidden disabled>
+        <legend>About your charity</legend>
+        <div class="row2">
+          <div class="field"><label for="chaName">Organisation name <span class="req">required</span></label><input id="chaName" name="chaName"><p class="err" data-err="chaName" hidden></p></div>
+          <div class="field"><label for="chaCause">Main cause area <span class="opt">optional</span></label>
+            <select id="chaCause" name="chaCause"><option value="">Choose…</option><option>Environment &amp; wildlife</option><option>Health</option><option>Youth &amp; education</option><option>Community</option><option>Other</option></select></div>
+        </div>
+        <div class="field"><label for="chaId">Registration number <span class="opt">optional</span></label><input id="chaId" name="chaId"></div>
+      </fieldset>
+
+      <!-- Conditional: supporter -->
+      <fieldset class="cond" data-for="supporter" hidden disabled>
+        <legend>About you</legend>
+        <fieldset class="checks"><legend class="sub">Causes you care about <span class="opt">optional</span></legend>
+          <label><input type="checkbox" name="causes" value="environment"> Environment</label>
+          <label><input type="checkbox" name="causes" value="health"> Health</label>
+          <label><input type="checkbox" name="causes" value="youth"> Youth &amp; education</label>
+          <label><input type="checkbox" name="causes" value="community"> Community</label>
+        </fieldset>
+        <div class="field"><label for="postcode">Postcode <span class="opt">optional</span></label><input id="postcode" name="postcode" inputmode="numeric" maxlength="4" autocomplete="postal-code"></div>
+      </fieldset>
+
+      <div class="field"><label for="notes">Anything you would like us to know? <span class="opt">optional</span></label><textarea id="notes" name="notes" rows="3"></textarea></div>
+
+      <!-- honeypot -->
+      <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <fieldset class="consent">
+        <legend>Your permissions</legend>
+        <label class="chk"><input type="checkbox" name="consentRespond" id="consentRespond"> <span>You may contact me to respond to this registration. <span class="req">required</span></span></label>
+        <p class="err" data-err="consentRespond" hidden></p>
+        <label class="chk"><input type="checkbox" name="consentUpdates" id="consentUpdates"> <span>Send me updates about Buying for Good. <span class="opt">optional, separate</span></span></label>
+        <p class="small">You can say yes to one and no to the other. Read our <a href="privacy.html">privacy policy</a>.</p>
+      </fieldset>
+
+      <button class="btn btn-lg" type="submit" id="regSubmit"><span class="lbl">Register my interest</span><span class="spin" aria-hidden="true"></span></button>
+      <p class="help">Need help? <a href="contact.html">Contact us</a> or email <a href="mailto:hello@example.org">hello@example.org</a> (placeholder).</p>
+    </form>
+
+    <div class="confirm" id="confirm" role="status" tabindex="-1" hidden>
+      <div class="tick" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 15-17"/></svg></div>
+      <h3 id="confirmTitle">Thank you</h3>
+      <p id="confirmText"></p>
+      <button class="btn btn-ghost" id="confirmAgain" type="button">Register someone else</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <a class="brand light" href="index.html"><svg class="brand-mark" viewBox="0 0 48 32" aria-hidden="true"><circle cx="14" cy="16" r="11" fill="#14A3A0"/><circle cx="24" cy="16" r="11" fill="#fff" fill-opacity=".9"/><circle cx="34" cy="16" r="11" fill="#F4B860"/></svg><span class="brand-name">Buying <em>for</em> Good</span></a>
+      <p class="small">Everyday purchases. Extraordinary good.</p>
+    </div>
+    <nav aria-label="Footer"><a href="#belief">The idea</a><a href="#how">How it works</a><a href="#trust">Trust</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Website terms</a></nav>
+    <p class="small concept-note">Concept build created from a public job brief to demonstrate approach and interaction quality. Not the live Buying for Good website. Sample copy and placeholder media throughout.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js?v=1791142292"></script>
+</body>
+</html>
