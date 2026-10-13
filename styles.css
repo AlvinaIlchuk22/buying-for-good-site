@@ -430,6 +430,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);bo
 .hero.has-video .w3{color:var(--sand);bottom:-1px;height:100%;animation-duration:46s}
 @media (max-width:760px){
   .hero-video{object-position:70% 50%}
+  .hero .scroll-cue{display:none}
   .hero-shade{background:linear-gradient(180deg,rgba(7,27,51,.7) 0%,rgba(7,27,51,.52) 50%,rgba(7,27,51,.3) 100%)}
 }
 
